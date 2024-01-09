@@ -51,7 +51,87 @@ body {
     background: rgba(11, 2, 35, 0.10);
     border: none;
     padding: .8rem;
+    cursor: pointer;
+}
 
+.nav-button span {
+    color: #3C354F;
+    font-size: 1.2rem;
+
+}
+
+.fa-youtube {
+    color: red;
+
+}
+
+
+
+
+
+
+
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 240px;
+    background: url('../images/Group\ 14.png');
+    background-repeat: no-repeat;
+
+}
+
+.banner-headline {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+
+
+}
+
+.banner-items {}
+
+.banner-description {
+    color: #534C64;
+
+    font-size: 1.3rem;
+
+    font-weight: 500;
+
+
+}
+
+.sign-in {
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1.3rem 2.5rem;
+    background-color: #F948B2;
+    border: none;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    
+
+}
+
+.fa-solid, .fa-regular{
+    padding-right: 0.8rem;
+}
+.go-rouge{
+    background-color: #4EC5F7;
+    margin-left: 1rem;
+}
+
+.banner-headline span {
+
+    font-size: 5.8rem;
+
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -59,25 +139,41 @@ body {
 /* responsive design */
 /* for mobile */
 @media screen and (max-width:576px) {
-    .navigation-container{
+    .navigation-container {
         flex-direction: column;
         background: none;
         box-shadow: none;
         text-align: center;
         padding: 0;
+        place-items: center;
     }
-    .left-section{
+
+    .left-section {
         margin-top: 50px;
     }
-    .nav-items{
+
+    .nav-items {
         text-align: center;
         padding-left: 0;
     }
-    .right-section a{
+
+    .right-section a {
         display: block;
         margin-bottom: 1rem;
     }
-    .nav-button{
-        
+
+    .nav-button {}
+
+    .banner-container{
+        flex-direction: column-reverse;
+        background: none;
+        margin: 50px 0px;
+    }
+    .banner-img img{
+        width: 400px;
+    }
+    .go-rouge{
+        display: inline;
+        margin-left: 0;
     }
 }
